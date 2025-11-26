@@ -58,70 +58,70 @@ public class GuiSettings {
             "LLLLxRRRR",
             "LLLLxRRRR");
 
-    public String tradeGuiTitle = "Trading with %player%";
-    public String ratingMenuTitle = "Review %player%'s traded items";
-    public String moneyEditorTitle = "Change %currency% amount";
-    public String moneyEditorLabel = "Amount";
+    public String tradeGuiTitle = "与 %player% 交易";
+    public String ratingMenuTitle = "评价 %player% 的交易物品";
+    public String moneyEditorTitle = "修改 %currency% 数量";
+    public String moneyEditorLabel = "数量";
 
-    public SimpleSerializableItem nextPage = new SimpleSerializableItem("ARROW", 1, 0, "<blue>Next Page", List.of());
-    public SimpleSerializableItem previousPage = new SimpleSerializableItem("ARROW", 1, 0, "<blue>Previous Page", List.of());
-    public SimpleSerializableItem refuseButton = new SimpleSerializableItem("RED_WOOL", 1, 0, "<red>Refused trade", List.of("", "<white>Click to <dark_green>confirm</dark_green> the trade</white>"));
-    public SimpleSerializableItem confirmButton = new SimpleSerializableItem("GREEN_WOOL", 1, 0, "<green>Confirmed trade", List.of("", "<white>Click to <red>refuse</red> the trade</white>"));
-    public SimpleSerializableItem cancelConfirmedButton = new SimpleSerializableItem("GRAY_DYE", 1, 0, "<red>Cancel trade", List.of("<white><red>Refuse</red> the trade", "<white>if you want to cancel it"));
-    public SimpleSerializableItem cancelTradeButton = new SimpleSerializableItem("BARRIER", 1, 0, "<red>Cancel trade", List.of("", "<white>Click to <red>cancel</red> the trade</white>", "<white>and take back all your items</white>"));
-    public SimpleSerializableItem getAllItems = new SimpleSerializableItem("ENDER_EYE", 1, 0, "<aqua>Get all items", List.of("", "<white>Click to <green>return</green> all items</white>", "<white>to your inventory</white>"));
-    public SimpleSerializableItem completedButton = new SimpleSerializableItem("LIME_WOOL", 1, 0, "<green>Completed trade", List.of(""));
-    public SimpleSerializableItem retrievedButton = new SimpleSerializableItem("LIGHT_BLUE_WOOL", 1, 0, "<blue>Retrieved trade", List.of(""));
+    public SimpleSerializableItem nextPage = new SimpleSerializableItem("ARROW", 1, 0, "<blue>下一页", List.of());
+    public SimpleSerializableItem previousPage = new SimpleSerializableItem("ARROW", 1, 0, "<blue>上一页", List.of());
+    public SimpleSerializableItem refuseButton = new SimpleSerializableItem("RED_WOOL", 1, 0, "<red>拒绝交易", List.of("", "<white>点击 <dark_green>确认</dark_green> 交易</white>"));
+    public SimpleSerializableItem confirmButton = new SimpleSerializableItem("GREEN_WOOL", 1, 0, "<green>确认交易", List.of("", "<white>点击 <red>拒绝</red> 交易</white>"));
+    public SimpleSerializableItem cancelConfirmedButton = new SimpleSerializableItem("GRAY_DYE", 1, 0, "<red>取消交易", List.of("<white><red>拒绝</red>交易", "<white>如果你想取消交易"));
+    public SimpleSerializableItem cancelTradeButton = new SimpleSerializableItem("BARRIER", 1, 0, "<red>取消交易", List.of("", "<white>点击 <red>取消</red> 交易</white>", "<white>并取回你的所有物品</white>"));
+    public SimpleSerializableItem getAllItems = new SimpleSerializableItem("ENDER_EYE", 1, 0, "<aqua>取回所有物品", List.of("", "<white>点击 <green>返还</green> 所有物品</white>", "<white>到你的背包</white>"));
+    public SimpleSerializableItem completedButton = new SimpleSerializableItem("LIME_WOOL", 1, 0, "<green>交易完成", List.of(""));
+    public SimpleSerializableItem retrievedButton = new SimpleSerializableItem("LIGHT_BLUE_WOOL", 1, 0, "<blue>已取回物品", List.of(""));
     public SimpleSerializableItem moneyDisplay = new SimpleSerializableItem("GOLD_NUGGET", 1, 0, "<yellow>%amount% %currency%", List.of());
-    public SimpleSerializableItem moneyConfirmButton = new SimpleSerializableItem("GOLD_BLOCK", 1, 0, "<yellow>Confirm", List.of());
-    public SimpleSerializableItem rateItem = new SimpleSerializableItem("NETHER_STAR", 1, 0, "<yellow>%stars%", List.of("<white>Review the trade %rating% star"));
+    public SimpleSerializableItem moneyConfirmButton = new SimpleSerializableItem("GOLD_BLOCK", 1, 0, "<yellow>确认", List.of());
+    public SimpleSerializableItem rateItem = new SimpleSerializableItem("NETHER_STAR", 1, 0, "<yellow>%stars%", List.of("<white>给交易评 %rating% 星"));
     public SimpleSerializableItem playerProfile = new SimpleSerializableItem("PLAYER_HEAD", 1, 0, "<yellow>%player_name%",
-            List.of("<white>Rating: <gold>%stars%</gold> or <aqua>%rating%</aqua>", "Trades completed: %trade_count%", ""));
+            List.of("<white>评分: <gold>%stars%</gold> 或 <aqua>%rating%</aqua>", "完成交易数: %trade_count%", ""));
     public SimpleSerializableItem separator = new SimpleSerializableItem("GRAY_STAINED_GLASS_PANE", 1, 0, "", List.of());
-    public SimpleSerializableItem openRatingMenu = new SimpleSerializableItem("NETHER_STAR", 1, 0, "<yellow>Review this trade", List.of("<white>You can edit your rating inside the receipt"));
+    public SimpleSerializableItem openRatingMenu = new SimpleSerializableItem("NETHER_STAR", 1, 0, "<yellow>评价此交易", List.of("<white>你可以在收据中编辑你的评分"));
 
-    public String xpBottleDisplayName = "<green>Bottled XP (%amount% points)";
+    public String xpBottleDisplayName = "<green>瓶装经验 (%amount% 点)";
 
     @Comment({"Remember that a book line contains 20 large characters",
             "(if you use 'i's or 'l's it will be contain more characters)",
             "\"default\" is the name of the currency name of the displayed price or symbol"})
     public List<List<String>> receiptIntestationFormat = List.of(
             List.of(
-                    "Trade Receipt",
+                    "交易收据",
                     "",
-                    "<black>Trader: <blue>%trader%</blue>",
+                    "<black>卖家: <blue>%trader%</blue>",
                     "",
-                    "<black>Customer: <blue>%customer%</blue>",
+                    "<black>买家: <blue>%customer%</blue>",
                     "",
-                    "Date: ",
+                    "日期: ",
                     "<blue>%timestamp%</blue>",
                     "",
-                    "Trader price: <gold>%price_default_trader%%symbol_default%</gold>",
-                    "Customer price: <gold>%price_default_customer%%symbol_default%</gold>",
-                    "<click:run_command:/trade-rate set %trade_uuid%>[<blue>Review this trade</blue>]</click>",
-                    "<click:run_command:/trade-rate show-trade %trade_uuid%>[<blue>View trade ratings</blue>]</click>"
+                    "卖家价格: <gold>%price_default_trader%%symbol_default%</gold>",
+                    "买家价格: <gold>%price_default_customer%%symbol_default%</gold>",
+                    "<click:run_command:/trade-rate set %trade_uuid%>[<blue>评价此交易</blue>]</click>",
+                    "<click:run_command:/trade-rate show-trade %trade_uuid%>[<blue>查看交易评价</blue>]</click>"
             )
     );
 
-    public String receiptBookDisplayName = "<!i>%trader%'s Receipt";
+    public String receiptBookDisplayName = "<!i>%trader% 的收据";
 
     @Comment({"Remember that a book line contains 20 large characters",
             "(if you use 'i's or 'l's it will be contain more characters)",
             "\"default\" is the name of the currency name of the displayed price or symbol"})
     public List<String> receiptBookLore = List.of(
-            "Trader: <blue>%trader%</blue>",
-            "Customer: <blue>%customer%</blue>",
-            "Date: ",
+            "卖家: <blue>%trader%</blue>",
+            "买家: <blue>%customer%</blue>",
+            "日期: ",
             "<blue>%timestamp%</blue>",
-            "Trader price: <gold>%price_default_trader%%symbol_default%</gold>",
-            "Customer price: <gold>%price_default_customer%%symbol_default%</gold>",
-            "Exchanged items:",
+            "卖家价格: <gold>%price_default_trader%%symbol_default%</gold>",
+            "买家价格: <gold>%price_default_customer%%symbol_default%</gold>",
+            "交换的物品:",
             "%items%"
     );
     public String itemDisplayLoreFormat = "<!i><gray>[x%amount% %item_display%]";
 
-    public String traderItemsIntestation = "<bold>Trader items: </bold>";
-    public String customerItemsIntestation = "<bold>Customer items: </bold>";
+    public String traderItemsIntestation = "<bold>卖家物品: </bold>";
+    public String customerItemsIntestation = "<bold>买家物品: </bold>";
     @Comment("%item_name% - item displayname or itemname or , %amount% - item amount")
     public String itemFormat = "<dark_gray>[x%amount% %item_name%]";
 
