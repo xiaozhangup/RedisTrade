@@ -94,8 +94,8 @@ public class Settings {
             "Leave this empty [] if you don't want to use any currency",
             "YOU MUST CHOOSE A DIFFERENT NAME FOR EACH CURRENCY",})
     public List<CurrencyItemSerializable> allowedCurrencies = List.of(
-            new CurrencyItemSerializable("vault:default", "GOLD_INGOT", 0, "<gold>Money"),
-            new CurrencyItemSerializable("minecraft:xp", "EXPERIENCE_BOTTLE", 0, "<green>Exp")
+            new CurrencyItemSerializable("vault:default", "GOLD_INGOT", 0, "<gold>金币"),
+            new CurrencyItemSerializable("minecraft:xp", "EXPERIENCE_BOTTLE", 0, "<green>经验")
     );
 
     @Comment("Component blacklist will come in the future")

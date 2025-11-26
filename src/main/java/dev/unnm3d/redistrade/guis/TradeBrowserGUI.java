@@ -32,7 +32,7 @@ public class TradeBrowserGUI {
     public void openWindow(Player player) {
         Window.single()
                 .setGui(gui)
-                .setTitle("Trade Browser")
+                .setTitle("交易浏览器")
                 .open(player);
     }
 

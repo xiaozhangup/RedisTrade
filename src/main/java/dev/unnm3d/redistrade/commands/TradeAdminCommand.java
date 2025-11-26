@@ -27,7 +27,7 @@ public class TradeAdminCommand {
     @Require("redistrade.reload")
     public void reload(@Sender CommandSender sender) {
         plugin.loadYML();
-        sender.sendMessage("§2RedisTrade reloaded");
+        sender.sendMessage("§2RedisTrade 已重新加载");
     }
 
     @Command(name = "setitem", desc = "Set the item")
@@ -63,10 +63,10 @@ public class TradeAdminCommand {
         if (task != null) {
             task.cancel();
             task = null;
-            sender.sendMessage("§2Stress test stopped");
+            sender.sendMessage("§2压力测试已停止");
             return;
         }
-        sender.sendMessage("§2Stress test started");
+        sender.sendMessage("§2压力测试已开始");
         task = RedisTrade.getInstance().getServer().getScheduler().runTaskTimer(RedisTrade.getInstance(), () -> {
             try {
                 Thread.sleep(1000);
